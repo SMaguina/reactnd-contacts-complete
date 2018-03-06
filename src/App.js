@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import ListContacts from './ListContacts'
 
 class App extends Component {
@@ -32,7 +32,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <ListContacts onDeleteContact={this.removeContact} />
+        <ListContacts onDeleteContact={this.removeContact} contacts={this.state.contacts} />
       </div>
     )
   }
